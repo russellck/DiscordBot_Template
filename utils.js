@@ -16,7 +16,6 @@ module.exports = {
     },
 
     getMentionFromUser: (user) => {
-        console.log(user);
         const mention = '<@' + user.id + '>';
         return mention;
     },

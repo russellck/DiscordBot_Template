@@ -25,7 +25,6 @@ module.exports = {
     async execute(interaction) {
         if (interaction.options.getSubcommand() === 'individual') {
             const user = interaction.options.getUser('user');
-            console.log('user: ' + user);
             const slapper = getMentionFromUser(interaction.user);
             const slapped = getMentionFromUser(user);
             if (user) {
